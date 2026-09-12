@@ -1,0 +1,5 @@
+# Protect internal include scripts from direct browser requests
+<FilesMatch "\.(php)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>

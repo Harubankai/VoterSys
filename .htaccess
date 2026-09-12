@@ -1,0 +1,8 @@
+# Disable Directory Listing
+Options -Indexes
+
+# Block access to sensitive database dumps, log files, configuration files
+<FilesMatch "\.(sql|log|ini|sh|bak|config|env)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>

@@ -1,0 +1,3 @@
+# Block direct HTTP access to database dumps directory
+Order allow,deny
+Deny from all

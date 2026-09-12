@@ -1,0 +1,160 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #d9e7f1, rgb(219, 221, 224));   
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/image.png');
+    opacity: 0.06;
+    z-index: -1;
+  }
+  
+  .modal-content {
+    border-radius: 10px !important;
+  }
+  
+  .container-fluid {
+    min-height: 90vh;
+    margin-top: 30px;
+  }
+
+  .navbar .container-fluid,
+  .navbar .container {
+    min-height: auto !important;
+    margin-top: 0 !important;
+  }
+  
+  .login-signup-box {
+    background: rgb(235, 229, 229);
+    border-radius: 15px;
+    max-width: 850px;
+    width: 100%;
+    margin: 10px;
+    
+  }
+  
+  .row {
+    background: white;
+    overflow: hidden;
+  }
+
+  /* Left Section */
+  .left-section h2 {
+    font-weight: bold;
+  }
+  
+  .left-section .btn-light {
+    font-size: 20px;
+    padding: 10px;
+  }
+  
+  .left-section .form-control {
+    border-radius: 25px;
+    padding: 12px;
+  }
+  
+  .btn-primary{
+    background-color:rgb(71, 74, 219);
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  
+  .btn-primary:hover {
+    transform: scale(1.1);
+    background:rgb(11, 14, 196);
+  }
+  
+  /* Right Section */
+  .right-section {
+    background-color: rgb(71, 74, 219);
+    color: white;
+    border-radius: 50px 0px 0px 50px;
+  }
+  
+  .right-section h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .right-section p {
+    margin-bottom: 20px;
+  }
+  
+  .right-section .btn-outline-light {
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 10px 40px;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .right-section .btn-outline-light:hover {
+    transform: scale(1.1);
+    background-color: white;
+    color: rgb(71, 74, 219);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+
+   
+    .right-section .btn-outline-light {
+      padding: 5px 20px;
+      font-size: 0.9rem;
+    }
+  
+    .right-section {
+      text-align: center;
+      padding-top: 0;
+      border-radius: 50px 50px 0px 0px;
+    }
+  
+    .login-signup-box {
+      max-width: 100%;
+      margin: 0;
+      border-radius: 0;
+    }
+
+  
+  }
+  
+  @media (max-width: 576px) {
+    .login-signup-box {
+      max-width: 100%;
+      margin: 0;
+      border-radius: 0;
+    }
+    
+    .right-section {
+      text-align: center;
+      padding-top: 0;
+      border-radius: 50px 50px 0px 0px;
+    }
+  
+    .left-section h2, .right-section h2 {
+      font-size: 1.5rem;
+    }
+  
+    .left-section .form-control, .btn-primary {
+      padding: 8px;
+      font-size: 0.9rem;
+    }
+  
+    .right-section .btn-outline-light {
+      padding: 5px 20px;
+      font-size: 0.9rem;
+    }
+  }
+   
